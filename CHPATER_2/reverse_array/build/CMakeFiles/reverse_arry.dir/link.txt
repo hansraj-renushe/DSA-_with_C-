@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/reverse_arry.dir/main.cc.o -o reverse_arry 

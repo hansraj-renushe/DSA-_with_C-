@@ -1,0 +1,3 @@
+/home/hansraj/DSA-_with_C-/CHPATER_2/find_smallest_largest/build/CMakeFiles/find_smallest_largest.dir
+/home/hansraj/DSA-_with_C-/CHPATER_2/find_smallest_largest/build/CMakeFiles/edit_cache.dir
+/home/hansraj/DSA-_with_C-/CHPATER_2/find_smallest_largest/build/CMakeFiles/rebuild_cache.dir

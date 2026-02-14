@@ -1,0 +1,3 @@
+/home/hansraj/DSA-_with_C-/CHPATER_2/reverse_array/build/CMakeFiles/reverse_arry.dir
+/home/hansraj/DSA-_with_C-/CHPATER_2/reverse_array/build/CMakeFiles/edit_cache.dir
+/home/hansraj/DSA-_with_C-/CHPATER_2/reverse_array/build/CMakeFiles/rebuild_cache.dir
