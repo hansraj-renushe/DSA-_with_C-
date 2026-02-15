@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": false,
-      "cwd": "/home/hansraj/DSA-_with_C-/CHPATER_2/reverse_array",
-      "program": "/home/hansraj/DSA-_with_C-/CHPATER_2/reverse_array/build/Debug/outDebug",
+      "cwd": "/home/hansraj/DSA-_with_C-/CHPATER_2_Array/binary _search",
+      "program": "/home/hansraj/DSA-_with_C-/CHPATER_2_Array/binary _search/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
