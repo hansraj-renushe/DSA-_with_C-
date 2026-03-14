@@ -10,10 +10,10 @@ int binary_search_recursion(vector<int>& array, int target, int st, int end)
     int mid = st + (end - st) / 2;
 
     if(target > array[mid])
-        return binary_search_recursion(array, target, mid + 1, end);
+        return binary_search_recursion(array, target, mid + 1, end); //2nd half
 
     else if(target < array[mid])
-        return binary_search_recursion(array, target, st, mid - 1);
+        return binary_search_recursion(array, target, st, mid - 1); //1st half
 
     else
         return mid;
