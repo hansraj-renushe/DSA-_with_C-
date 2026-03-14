@@ -51,28 +51,6 @@ void selectionSort(int array[], int size) {
 }
 
 void insertionSort(int array[], int size) {
-    for(int i =0; i<size -1 ; i++)
-    {
-        int selectionIdx = i;
-
-        for(int j =i+1 ; j<size ; j++)
-
-        {
-
-            if(array[j]<array[selectionIdx])
-            {
-
-                selectionIdx = j;
-            }
-        }
-
-       swap(array[i],array[selectionIdx]);
-        
-    }
-    
-}
-
-void insertionSort(int array[], int size) {
     for(int i =0; i<size ; i++)
     {
         int curr = array[i];
