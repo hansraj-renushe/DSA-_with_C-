@@ -1,93 +1,69 @@
 #include <iostream>
-#include <utility>
+#include <vector>
 
 using namespace std;
 
-void bubbleSort(int array[], int size) {
-    for(int i =0; i<size -1 ; i++)
+void merge(vector<int>& arr, int st, int mid, int end) {
+    vector<int> temp;
+    int i = st, j = mid + 1;
+
+    while(i <= mid && j <= end )
     {
-        bool swape =false;
-        for(int j = 0; j < size - i - 1; j++) 
-        {
+       if(arr[i] <= arr[j])
+       {
+          temp.push_back(arr[i]);
+          i++;
+       }else
+       {
+        temp.push_back(arr[j]);
+        j++;
 
-            if(array[j]>array[j+1])
-            {
-
-                swap(array[j],array[j+1]);
-
-                swape =true;
-            }
-
-        }
-
-        if(!swape)
-        {
-                return;
-        }
+       }
     }
-    
+
+    while (i <= mid) {
+        temp.push_back(arr[i]);
+        i++;
+    }
+
+    while (j <= end) {
+        temp.push_back(arr[j]);
+        j++;
+    }
+
+    for (int idx = 0; idx < temp.size(); idx++) {
+        arr[st + idx] = temp[idx];
+    }
 }
 
-void selectionSort(int array[], int size) {
-    for(int i =0; i<size -1 ; i++)
-    {
-        int selectionIdx = i;
-
-        for(int j =i+1 ; j<size ; j++)
-
-        {
-
-            if(array[j]<array[selectionIdx])
-            {
-
-                selectionIdx = j;
-            }
-        }
-
-       swap(array[i],array[selectionIdx]);
+void merge_sort(vector<int>& arr, int st, int end) {
+    if (st < end) {
         
+        int mid = st + (end -st)/2;
+        merge_sort(arr,st,mid);
+        merge_sort(arr, mid+1, end);
+
+        merge(arr, st , mid, end);
     }
-    
 }
 
-void insertionSort(int array[], int size) {
-    for(int i =0; i<size ; i++)
-    {
-        int curr = array[i];
-        int prev = i- 1;
-
-      while(prev>= 0 && array[prev] >= curr)
-      {
-          array[prev+1]=array[prev];
-
-                 prev--;
-
-      }
-      array[prev+1]=curr;
-
-        
-    }
-    
-}
-
-void printArray(int array[], int size) {
-    for (int i = 0; i < size; i++) {
-        cout << array[i] << " ";
+void printArray(const vector<int>& arr) {
+    for (int value : arr) {
+        cout << value << " ";
     }
     cout << endl;
 }
 
 int main() {
-    int array[] = {5,6, 4, 3, 2, 1};
-    int size = sizeof(array) / sizeof(array[0]);
+    vector<int> arr = {5, 6, 4, 3, 2, 1};
 
     cout << "Before sorting: ";
-    printArray(array, size);
+    printArray(arr);
 
-    bubbleSort(array, size);
+    merge_sort(arr, 0, arr.size() - 1);
 
     cout << "After sorting: ";
-    printArray(array, size);
+    printArray(arr);
 
     return 0;
 }

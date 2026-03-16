@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/quick_sort.dir/main.cc.o"
-  "CMakeFiles/quick_sort.dir/main.cc.o.d"
   "quick_sort"
   "quick_sort.pdb"
 )

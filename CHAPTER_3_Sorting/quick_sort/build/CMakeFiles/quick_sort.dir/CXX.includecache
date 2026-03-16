@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/hans/DSA-_with_C-/CHAPTER_3_Sorting/quick_sort/main.cc
+iostream
+-
+vector
+-
+utility
+-
+
